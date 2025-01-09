@@ -4,17 +4,18 @@
     window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
 </script>
 
-         <script>
-        // 等待页面加载完成替换QQ
+           <script>
+        // 等待页面加载完成
         window.onload = function() {
-            // 查找具有特定 ID 的<a>标签
-            var link = document.getElementById('b4mI1erPaEnNTGmW');
-            var link = document.getElementById('UKSp5zQ2pdLBSXK5');
-            var link = document.getElementById('jEYy16NTTyrRf8I');
-            if (link) {
-                // 替换文本
-                link.textContent = link.textContent.replace('1231231234', '8888');
-            }
+            // 查找所有具有特定 ID 的<a>标签
+            var ids = ['UKSp5zQ2pdLBSXK5', 'jEYy16NTTyrRf8Ib'，'b4mI1erPaEnNTGmW'];
+            ids.forEach(function(id) {
+                var link = document.getElementById(id);
+                if (link) {
+                    // 替换文本
+                    link.textContent = link.textContent.replace('1231231234', '8888');
+                }
+            });
         };
     </script>
      
