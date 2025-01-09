@@ -65,20 +65,18 @@
        
     </script>
 
-
-          <script>
-        // 等待页面加载完成
-        window.onload = function() {
+ <script>
+        // 等待 DOM 加载完成
+        document.addEventListener('DOMContentLoaded', function() {
             // 查找所有具有特定 ID 的<a>标签
-            var ids = ['UKSp5zQ2pdLBSXK5', 'jEYy16NTTyrRf8Ib'，'b4mI1erPaEnNTGmW'];
+            var ids = ['UKSp5zQ2pdLBSXK5', 'jEYy16NTTyrRf8Ib','b4mI1erPaEnNTGmW'];
             ids.forEach(function(id) {
                 var link = document.getElementById(id);
                 if (link) {
                     // 替换文本
-                    link.textContent = link.textContent.replace('1231231234', '8888');
-                 
+                    link.textContent = link.textContent.replace('9999', '8888');
                 }
             });
-        };
+        });
     </script>
  </body></html>
