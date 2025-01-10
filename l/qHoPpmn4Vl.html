@@ -39,6 +39,26 @@
     </div>
     <div class="zzsr"></div>
 </div>
+<!-- Event snippet for 潜客 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10976787172/YfObCIL944AaEOT1kfIo',
+      'value': 5.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+    
 </body>
 <script src="../admin/template/qHoPpmn4Vl-64756-release-3.js?v=1735969585"></script>
 <script type="text/javascript" src="../admin/view/page/compress_jhy2/jiaohuye_bottom.js?v=1.0.7"></script>
