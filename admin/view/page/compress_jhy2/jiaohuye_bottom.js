@@ -332,7 +332,7 @@ function gtag_report_conversion(url) {
 }
 
 function jump(){
-    gtag_report_conversion();
+	gtag_report_conversion();
     call_douyin_form();
     var usersview = localStorage.getItem("usersview59" + com_extra['links_id']);
     if (!usersview && typeof(usersview) != "undefined" && usersview != 0) {
@@ -341,7 +341,7 @@ function jump(){
         console.log("usersview59"+ com_extra['links_id'] +"重复用户！");
         //test
         window.location.href = tzurl;
-       // showdialog();
+        //showdialog();
     }
 }
 function showdialog(){
