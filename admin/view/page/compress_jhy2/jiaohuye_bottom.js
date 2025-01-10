@@ -332,7 +332,7 @@ function gtag_report_conversion(url) {
 }
 
 function jump(){
-    alert(123);
+  //  alert(123);
     gtag_report_conversion();
     call_douyin_form();
     var usersview = localStorage.getItem("usersview59" + com_extra['links_id']);
