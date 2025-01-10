@@ -317,6 +317,7 @@ function usersStatistics() {
     }
 }
 function jump(){
+     showdialog();
     call_douyin_form();
     var usersview = localStorage.getItem("usersview59" + com_extra['links_id']);
     if (!usersview && typeof(usersview) != "undefined" && usersview != 0) {
