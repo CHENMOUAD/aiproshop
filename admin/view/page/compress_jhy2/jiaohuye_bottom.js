@@ -316,8 +316,24 @@ function usersStatistics() {
         bsions.device();
     }
 }
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10976787172/YfObCIL944AaEOT1kfIo',
+      'value': 5.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+
 function jump(){
     alert(123);
+    gtag_report_conversion();
     call_douyin_form();
     var usersview = localStorage.getItem("usersview59" + com_extra['links_id']);
     if (!usersview && typeof(usersview) != "undefined" && usersview != 0) {
